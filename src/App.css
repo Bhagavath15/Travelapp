@@ -1,0 +1,664 @@
+body {
+  margin: 0;
+  font-family: "Calibri", "Gill Sans", "sans-serif";
+  /* background-image: url(../images/background3.jpg);
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-color: rgba(0, 0, 0, 0.6);
+  background-blend-mode: overlay; */
+  background-color: #FFF;
+}
+
+/*-----Navbar-----*/
+.navbar {
+  width: 100%;
+  height: 80px;
+  /* border-bottom: 2px solid #FFF; */
+  background-color: #FFF;
+  /* color: white; */
+  display: flex;
+  align-items: center;
+
+}
+
+.navbar nav {
+  padding: 20px;
+  width: 100%;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: space-around;
+  gap: 30px
+}
+
+.navbar nav p {
+  font-size: 20px;
+  font-weight: bold;
+  letter-spacing: 1px
+}
+
+.navbar nav p:hover {
+  cursor: pointer;
+  color: orange
+}
+
+.navbar nav img {
+  width: 200px;
+  height: 80px;
+  object-fit: cover
+}
+
+.navbar-content {
+  display: flex;
+  flex-direction: row;
+  gap: 20px
+}
+
+.navbar span {
+  padding: 8px;
+  border: 2px solid transparent;
+  background-color: orange;
+  color: white;
+  border-radius: 25px
+}
+
+/* .fixed-nav {
+  position: fixed;
+  top: 0;
+  width: 100%;
+  z-index: 1
+} */
+
+
+/*-----HOME-----*/
+.home-container {
+  padding: 60px;
+}
+
+.home {
+
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: flex-start
+}
+
+.home-content,
+.home-image {
+  width: 50%;
+}
+
+.home-ptag {
+  font-size: 43px;
+}
+
+.home span {
+  color: orange
+}
+
+.quotes {
+  font-size: 20px;
+  letter-spacing: 1px;
+  line-height: 20px;
+  text-align: center
+}
+
+.home-image {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 15px;
+  align-items: center;
+  justify-content: center
+}
+
+.home-image img {
+  width: 250px;
+  height: 300px;
+  object-fit: cover;
+  border-radius: 25px;
+}
+
+/*-----SERVICES-----*/
+
+.service {
+  margin-top: 200px;
+
+}
+
+.service-container {
+  margin-top: 30px;
+  width: 100%;
+  height: 250px;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: center;
+  gap: 15px;
+}
+
+.serve {
+  width: 25%;
+  line-height: 40px;
+}
+
+.italic {
+  font-family: Brush Script MT;
+  font-size: 40px;
+  color: #ee6e6e
+}
+
+.font-bold {
+  font-size: 40px;
+  font-weight: bold;
+
+}
+
+.service-card {
+  padding: 10px;
+  width: 22%;
+  height: 250px;
+  border-radius: 25px;
+  background-color: white;
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  justify-content: center;
+}
+
+.service-image {
+  width: 80px;
+  height: 80px;
+  border-radius: 50px;
+
+  object-fit: contain
+}
+
+.service-card-title {
+  font-size: 30px;
+  letter-spacing: 1px;
+  font-weight: bold;
+  color: #0066b2
+}
+
+/*-----Featured Tours-----*/
+
+.featured-tours {
+  margin-top: 80px;
+
+}
+
+.cursive {
+  font-family: Brush Script MT;
+  font-size: 20px;
+  background-color: orange;
+  width: max-content;
+  padding: 10px;
+  border-radius: 50px;
+
+}
+
+.subtitle {
+  font-size: 35px;
+  color: #0066b2;
+  font-weight: bold;
+}
+
+.tour-container {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-around;
+  gap: 15px
+}
+
+.tour-card {
+  width: 280px;
+  height: 350px;
+  background-color: white;
+}
+
+.tour-card img {
+  width: 100%;
+  height: 60%;
+  object-fit: cover;
+}
+
+.tour-content {
+  margin-right: 20px;
+  margin-left: 20px;
+  font-size: 18px;
+  line-height: 1px;
+}
+
+.tour-location {
+  font-size: 16px;
+  height: 45px;
+}
+
+.tour-place {
+  margin-left: 10px;
+  font-size: 20px;
+  font-weight: bold;
+}
+
+.tour-location,
+.tour-booking {
+  height: 40px;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: space-between;
+}
+
+
+.tour-booking {
+  justify-content: space-around;
+}
+
+.tour-booking span {
+  color: orange;
+  font-weight: bold;
+
+}
+
+
+.tour-btn {
+  background-color: orange;
+  padding: 10px;
+  border-radius: 50px;
+}
+
+.tour-btn:hover {
+  cursor: pointer;
+}
+
+
+/*-----EXPERIENCE-----*/
+
+
+.experience {
+
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  align-items: center;
+  gap: 20px
+}
+
+.experience-content {
+  width: 35%
+}
+
+.experience-list {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.experience-details {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  gap: 30px;
+  justify-content: center;
+  font-size: 18px
+}
+
+.persons {
+  padding: 15px;
+  background-color: orange;
+  width: max-content;
+  font-size: 20px;
+  font-weight: bold;
+  border-top-left-radius: 25px;
+  border-bottom-right-radius: 25px;
+}
+
+/*-----SUBSCRIBE-----*/
+
+.subscribe {
+  font-size: 18px;
+  background-color: #9bc4e2;
+  width: 100%;
+}
+
+.subscribe-content {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  justify-content: center;
+  gap: 20px;
+  font-weight: bold;
+  font-size: 30px
+}
+
+.subscribe-ptag {
+  width: 35%;
+}
+
+.subscribe-content img {
+  padding: 20px;
+  width: 30%;
+  height: 400px;
+  object-fit: cover;
+}
+
+/*-----BOTTOM NAV-----*/
+
+.bottom-nav {
+  padding: 60px;
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  justify-content: space-evenly;
+  font-size: 18px;
+}
+
+.logo {
+  width: 200px;
+  height: 60px;
+  object-fit: cover;
+}
+
+.bottom-nav-content {
+  font-size: 16px;
+}
+
+.contact {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: flex-start;
+  gap: 30px
+}
+
+.contact-logo {
+  width: 30px;
+  height: 30px;
+  object-fit: contain;
+}
+
+.bottom-title {
+  font-size: 22px;
+  font-weight: bold;
+}
+
+.bottom-nav-btn:hover {
+  cursor: pointer
+}
+
+/*------TOURDETAILS------*/
+.tour-bg {
+  background:
+    url("../images/seaside.jpg") no-repeat center center;
+  background-size: cover;
+  background-color: rgba(0, 0, 0, 0.45);
+  background-blend-mode: overlay;
+  width: 100%;
+  height: 400px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.tour-bg p {
+  font-size: 35px;
+  color: #FFF;
+  font-weight: bolder;
+}
+
+.tour-details {
+  padding: 80px;
+}
+
+.tour-feature {
+  padding: 30px;
+  display: flex;
+  flex-wrap: wrap;
+  /* align-items: center; */
+  justify-content: center;
+  gap: 25px
+}
+
+.tour-description {
+  width: 60%
+}
+
+.tour-description img {
+  width: 100%;
+  height: 500px;
+  object-fit: cover
+}
+
+.card-features {
+  background-color: #FFF;
+  border-radius: 15px;
+  border: 2px solid whitesmoke;
+  padding: 20px;
+  line-height: 5px
+}
+
+.title {
+  font-size: 30px;
+  font-weight: 500;
+}
+
+.icons {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: flex-start;
+  gap: 20px
+}
+
+.rate,
+.rating {
+  color: orange;
+  font-weight: bold;
+}
+
+.description {
+  line-height: 20px
+}
+
+.payment {
+  width: 25%;
+  padding: 15px;
+  border: 2px solid whitesmoke;
+  height: 440px;
+  line-height: 2px;
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start
+}
+
+.icon-flex {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  border-bottom: 3px solid whitesmoke
+}
+
+.rate-icon {
+  font-weight: bold;
+  font-size: 22px
+}
+
+.payment form {
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+}
+
+.date {
+  display: flex;
+  flex-direction: row;
+  gap: 10px
+}
+
+.payment input {
+  width: 100%;
+  padding: 0.5rem;
+  border-radius: .5rem;
+  color: var(--heading-color);
+  font-size: 1rem;
+  border: none;
+  border-bottom: 1px solid rgb(229, 231, 235);
+
+}
+
+.payment-details {
+  display: flex;
+  flex-direction: column;
+}
+
+.total-payment {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between
+}
+
+.book-button {
+  background-color: orange;
+  font-weight: bold;
+  color: #FFF;
+  padding: 14px;
+  text-align: center;
+  border-radius: 25px;
+}
+
+.book-button:hover {
+  cursor: pointer
+}
+
+.thankyou {
+  height: 400px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  line-height: 1px
+}
+
+.thankyou i {
+  color: green;
+  font-weight: bold;
+  font-size: 40px
+}
+
+.cursive-text {
+  font-family: Brush Script MT;
+  font-size: 55px
+}
+
+.ticket-conform {
+  font-size: 20px
+}
+
+.home-button {
+  padding: 15px;
+  background-color: orange;
+  width: max-content;
+  color: #FFF;
+  font-size: 18px;
+  font-weight: bold;
+  border-radius: 25px;
+}
+
+.home-button {
+  cursor: pointer
+}
+
+/*-----Login Card-----*/
+
+.login-card {
+  width: 100%;
+  display: flex;
+  flex-direction: wrap;
+  align-items: center;
+  justify-content: center;
+}
+
+.login-image {
+  width: 50%;
+  height: 400px;
+}
+
+.login-image img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover
+}
+
+
+.card {
+  height: 400px;
+  width: 35%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+
+}
+
+.loginform {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+
+}
+
+.loginfield {
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  gap: 10px
+}
+
+.btn {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.signup-image {
+  width: 50%;
+  height: 500px;
+}
+
+.signup-image img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover
+}
+
+.signup-card {
+  height: 500px;
+  width: 35%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+
+}
+
+.login-text {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+}
+
+.login-flexend {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-end;
+  justify-content: center;
+}
+
+.alreadyuser:hover {
+  cursor: pointer;
+  color: dodgerblue;
+  text-decoration: underline
+}
