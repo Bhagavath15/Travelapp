@@ -246,7 +246,7 @@ function FeaturesTours({ tour, setTour }) {
   //   "rate": "Rs.2000"
   // }]
   const getProducts = () => {
-    fetch("http://localhost:4010/tours",
+    fetch("https://travel-backend-three.vercel.app/tours",
       { method: "GET" })
       .then((data) => data.json())
       .then((dts) => setTour(dts))

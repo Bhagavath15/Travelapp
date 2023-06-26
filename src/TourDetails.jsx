@@ -18,7 +18,7 @@ export function TourDetails({ tour, setTour }) {
 
 function TourContainer({ tour, setTour }) {
     const getProducts = () => {
-        fetch("http://localhost:4010/tours",
+        fetch("https://travel-backend-three.vercel.app/tours",
             { method: "GET" })
             .then((data) => data.json())
             .then((dts) => setTour(dts))
@@ -121,7 +121,7 @@ export function TourFeatures() {
 
     }
     useEffect(() => {
-        fetch(`http://localhost:4010/tours/${id}`)
+        fetch(`https://travel-backend-three.vercel.app/tours/${id}`)
             .then((data) => data.json())
             .then((dts) => setTour(dts));
     }, [id]);
