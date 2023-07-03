@@ -79,7 +79,7 @@ export function Login() {
 export function Signin() {
     const navigate = useNavigate()
     const [formstate, setformstate] = useState("success")
-
+    const [userType, setUserType] = useState('')
     const formik = useFormik({
         initialValues: {
             firstname: "",
@@ -117,6 +117,7 @@ export function Signin() {
                     <h2>SIGNUP</h2>
                     <div className='loginfield'>
                         <div className="login-flexend">
+
                             <div className="login-text">
                                 <label>First Name : </label>
                                 <TextField

@@ -95,22 +95,22 @@ function Navbar() {
     }, 1500);
     console.log("logout")
   }
-  useEffect(() => {
-    const handleScroll = () => {
-      const scrollPosition = window.scrollY
-      const scrollThreshold = 70
-      if (scrollPosition > scrollThreshold) {
-        setNavFixed(true)
-      }
-      else {
-        setNavFixed(false)
-      }
-    }
-    window.addEventListener('scroll', handleScroll)
-    return () => {
-      window.removeEventListener('scroll', handleScroll)
-    }
-  }, [])
+  // useEffect(() => {
+  //   const handleScroll = () => {
+  //     const scrollPosition = window.scrollY
+  //     const scrollThreshold = 70
+  //     if (scrollPosition > scrollThreshold) {
+  //       setNavFixed(true)
+  //     }
+  //     else {
+  //       setNavFixed(false)
+  //     }
+  //   }
+  //   window.addEventListener('scroll', handleScroll)
+  //   return () => {
+  //     window.removeEventListener('scroll', handleScroll)
+  //   }
+  // }, [])
   return (
     <div className={navFixed ? "navbar fixed-nav" : "navbar"}>
       <nav>
@@ -119,11 +119,20 @@ function Navbar() {
           <p onClick={() => navigate("/dashboard")}>Home</p>
           <p onClick={() => navigate("/tours")}>Tours</p>
         </div>
-        <div className="navbar-content">
-          <p onClick={() => navigate("/")}>Login</p>
-          <p onClick={() => navigate("/register")}><span>Register</span></p>
-          <p onClick={logoutFunc}>Logout</p>
-        </div>
+        {
+          localStorage.getItem('token') == null ? (
+            <div className="navbar-content">
+              <p onClick={() => navigate("/")}>Login</p>
+              <p onClick={() => navigate("/register")}><span>Register</span></p>
+            </div>) : (
+            <div className="navbar-content">
+              <p onClick={logoutFunc}>Logout</p>
+            </div>
+          )
+
+        }
+
+
       </nav>
     </div>
   )
