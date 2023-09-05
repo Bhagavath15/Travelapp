@@ -169,8 +169,8 @@ export function TourFeatures() {
                         <p>{serviceFee}</p>
                     </div>
                     <div className="total-payment">
-                        <p>Total</p>
-                        <p>{totalAmount}</p>
+                        <p><b>Total</b></p>
+                        <p><b>{totalAmount}</b></p>
                     </div>
                     <p className="book-button" onClick={handleClick}>Book Now</p>
                 </div>
